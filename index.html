@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form_registration</title>
+
+</head>
+
+<body>
+    <form class="container" method="POST">
+        <div class="wrapper">
+            <div class="registration-form" method="POST">
+                <h2>Registration Form</h2>
+                <div class="field">
+                    <img class="field__icon" src="img/username.png" alt="">
+                    <input class="field__input" type="text" name="username" placeholder="Username" required></input>
+                </div>
+                <div class="field">
+                    <img class="field__icon" src="img/email.png" alt="">
+                    <input class="field__input" type="text" name="email" placeholder="Email address" required></input>
+                </div>
+                <div class="fields_group">
+                    <div class="field">
+                        <img class="field__icon" src="img/pswd.png" alt="">
+                        <input class="field__input" type="text" name="password" placeholder="Password" minlength="6"
+                            maxlength="10" required></input>
+                    </div>
+                    <div class="field field--without-icon">
+                        <input class="field__input" type="text" name="confirm_password" placeholder="Confirm password"
+                            minlength="6" maxlength="10" required></input>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-form" method="POST">
+                <h2>Personal details</h2>
+                <div class="fields_group">
+                    <div class="field">
+                        <input class="field__input" type="text" id="firstName" name="firstName" placeholder="First name">
+                    </div>
+                    <div class="field">
+                        <input class="field__input" type="text" id="secondName" name="secondName" required maxlength="30"
+                            placeholder="Second name">
+                    </div>
+                </div>
+                <div class="fields_group">
+                    <div class="field">
+                        <select class="field__input" name="frame" required>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <input class="field__input" type="text" id="start" name="trip-start" placeholder="yyyy/mm/dd">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="checkbox-form">
+        <div class="checkbox-first">
+            <input type="checkbox" name="box" id="check1" required>
+            <span>I want to receive mems and special offers</span>
+        </div>
+        <div class="checkbox-first">
+            <input type="checkbox" name="box" id="check1" required>
+            <span>I agree with the Terms and Conditions</span>
+        </div>
+    </div>
+    <div class="form__submit">
+        <input class="form__button" type="submit" value="Submit" id="form_button" />
+    </div>
+</form>
+</body>
+
+</html>
